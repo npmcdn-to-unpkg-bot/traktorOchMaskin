@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # YeoPress Default Theme
 
 This base theme is packed full of goodies to get your WordPress development process off the ground.  Not only does it come with a decent amount of WP Theme files, it also gets you setup with a `Gruntfile` with some goodies like LiveReload, Sass compilation and RequireJS support.
@@ -50,3 +51,6 @@ This task builds an optimized version of the theme for production.  It runs the 
 - requirejs:production
 
 For the image min tasks, the files are saved directly over the original files.  The sass production builds minified css for the live site in the css directory.  The only one that will take some configuration and a change to your php is the requirejs task.  This task generates optimized files using the `r.js` tool, and comes packaged to output one file called `optimized.min.js` which you would then need to enqueue through the WordPress `functions.php` file.
+=======
+# traktorOchMaskin
+>>>>>>> origin/master
