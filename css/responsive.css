@@ -2,6 +2,30 @@
   .boxout {
     display: none;
   }
+
+  header .top-header {
+    margin-top: 80px;
+  }
+  header .top-header .branding {
+    left: 0px;
+    right: 0px;
+    margin: 0px;
+    margin-left: 0px !important;
+    top: -80px;
+    padding-bottom: 20px;
+    background-color: #b12727;
+  }
+  header .top-header #right-nav {
+    padding-right: 0px;
+    width: initial;
+  }
+  header .top-header #left-nav {
+    padding-left: 50px;
+    width: initial;
+  }
+  header .top-header #left-nav ul#menu-leftmeny {
+    float: left;
+  }
 }
 @media (max-width: 995px) {
   .banner .welcomebox {
