@@ -82,6 +82,15 @@ table {
   }
 }
 @media (max-width: 995px) {
+  header .top-header #left-nav {
+    display: none;
+    opacity: 0;
+  }
+  header .top-header #right-nav {
+    display: none;
+    opacity: 0;
+  }
+
   .banner .welcomebox {
     width: 70%;
   }

@@ -57,6 +57,22 @@
 @media(max-width:995px){
 
 
+	header{
+
+		.top-header{
+			#left-nav{
+				display: none;
+				opacity: 0;
+			}
+
+			#right-nav{
+				display: none;
+				opacity: 0;
+			}
+		}
+	}
+
+
 	.banner{
 		.welcomebox{
 			width: 70%;
