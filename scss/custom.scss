@@ -1,3 +1,4 @@
+$mq-mobile-narrower: "only screen and (max-width : 320px)";
 
 $gold:#E5A745;
 $maincolor: #000000;
@@ -53,6 +54,12 @@ body{
 	font-family: $defaultFont;
 	line-height:1;
 	color: $textcolor;
+}
+
+.boxout{
+	height:$headerHeight;
+	float:left;
+	    width: 20%;
 }
 
 
@@ -493,29 +500,49 @@ height: $headerHeight;
 
 .top-header{
 
+
+	#right-nav{
+		padding-right: 100px;
+	}
+
+	#left-nav{
+		padding-left: 100px;
+
+		#menu-leftmeny{
+			float: right;
+		}
+	}
+
 		height: $headerHeight;
 	background-color: #b12727;
 	text-align: center;
 
 
 	.center-menu{
-		display: inline-block;
+		    display: inline-block;
+    position: absolute;
+    left: 0px;
+    right: 0px;
 	}
 	
 
 
 	.branding{
-		float: left;
-		padding-left:15px;
-		margin-right: 15px;
+    position: absolute;
+    display: inline-block;
+    text-align: center;
+    padding-left: 15px;
+    margin-right: 15px;
+    left: 50%;
+
 	}
 
 	img{
 		max-width: 300px;
 		max-height: 55px;
 		margin-top: 10px;
-    margin-right: 40px;
-    margin-left: 40px;
+   // margin-right: 40px;
+    //margin-left: 40px;
 	}
 
 	#local{
@@ -558,6 +585,7 @@ height: $headerHeight;
 
 		//width: 100%;
 		float:left;
+		    width: 40%;
 
   ul {
     margin: 0;
@@ -569,8 +597,8 @@ height: $headerHeight;
   .current_page_item{
 
   	a{
-  		color: black;
-  		background-color:white;
+  		//color: black;
+  		//background-color:white;
   	}
   }
 
@@ -756,6 +784,10 @@ padding: 80px 0px;
 
 section{
 
+	.content-wrap{
+		margin:90px 0px;
+	}
+
 
 	.container{
 		//	background-color:white;
@@ -763,6 +795,11 @@ section{
 		padding:15px;
 
 		//border: 1px solid #D4D4D4;
+
+
+		p{
+			letter-spacing: 1px;
+		}
 
 	}
 }
@@ -848,7 +885,7 @@ section#facebook{
     line-height: 0;
     -webkit-transition: opacity .2s ease-in-out;
     transition: opacity .2s ease-in-out;
-    border: .5vw solid transparent;
+    border: .2vw solid transparent;
 
 			cursor: pointer;
 
@@ -1448,9 +1485,10 @@ section#parallax{
 #service{
 
 	img{
-		display: block;
-		width: 48%;
-		height: auto;
+    display: block;
+    max-width: 48%;
+    height: auto;
+    max-height: 500px;
 	}
 
 	.left{
@@ -1491,10 +1529,10 @@ section#parallax{
 
 		width: 100%;
 		display: block;
-		margin:60px 0px;
+		margin:120px 0px;
 
 		.service-text{
-			margin-top: 90px;
+			//margin-top: 90px;
 		}
 
 

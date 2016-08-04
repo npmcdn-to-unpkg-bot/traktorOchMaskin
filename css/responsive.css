@@ -1,3 +1,8 @@
+@media (max-width: 1300px) {
+  .boxout {
+    display: none;
+  }
+}
 @media (max-width: 995px) {
   .banner .welcomebox {
     width: 70%;

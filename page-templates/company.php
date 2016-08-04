@@ -12,12 +12,16 @@ get_header();
 
 <div class="banner" style="background-image:url(' <?php the_post_thumbnail_url( 'full' ); ?> ')"></div>
 
+<div class="content-wrap">
+
 <div class="container">
 <h1><?php the_title(); ?></h1>
 
 <div class="col-md-7">
 	<?php the_content(); ?>
 </div>
+</div>
+
 </div>
 			
 </section>

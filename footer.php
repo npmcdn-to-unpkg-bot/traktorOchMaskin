@@ -57,6 +57,19 @@ console.log('first')
 			$(document).ready(function(){
 
 
+				var headerW = $('.branding img').width();
+
+				var boxOutW = $('.boxout').width();
+
+
+
+				$('.branding').css({
+					//width: headerW,
+					'margin-left': -headerW/2,
+					//'margin-right': headerW/2,
+				})
+
+
 				var $grid = $('.grid').masonry({
 
 
