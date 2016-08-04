@@ -1,0 +1,30 @@
+@media (max-width: 995px) {
+  .banner .welcomebox {
+    width: 70%;
+  }
+}
+@media (max-width: 765px) {
+  .page-content .tjanster .tjanst-item {
+    height: 400px;
+  }
+}
+@media (max-width: 600px) {
+  header nav ul {
+    display: none;
+  }
+
+  .banner .welcomebox {
+    width: 100%;
+  }
+
+  .page-content .tjanster .tjanst-item {
+    height: 300px;
+  }
+}
+@media (max-width: 400px) {
+  .welcomebox h1 {
+    font-size: 30px;
+  }
+}
+
+/*# sourceMappingURL=responsive.css.map */
