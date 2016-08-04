@@ -65,7 +65,8 @@
 								wp_nav_menu(array(
 				'theme_location' => 'right-menu',
 				'container'      => 'nav',
-				'container_id'   => 'right-nav'
+				'container_id'   => 'right-nav',
+				
 			))
 				/*wp_nav_menu(array(
 				'theme_location' => 'main-nav',

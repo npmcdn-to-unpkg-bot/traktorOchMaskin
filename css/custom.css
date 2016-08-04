@@ -82,13 +82,49 @@ table {
   }
 }
 @media (max-width: 995px) {
+  header .top-header .menu-toggle {
+    display: block;
+    color: white;
+    cursor: pointer;
+  }
+  header .top-header nav {
+    width: 100%;
+    background-color: #b12727;
+  }
+  header .top-header nav ul {
+    width: 100%;
+    float: none;
+    height: auto;
+  }
+  header .top-header nav ul li {
+    float: none;
+    background-color: #b12727;
+    width: 100%;
+    display: block;
+  }
   header .top-header #left-nav {
+    height: auto;
+    width: 100%;
+    background-color: #b12727;
+    display: none;
+    opacity: 0;
+    float: none;
+    padding-left: 0px;
+  }
+  header .top-header #left-nav ul#menu-leftmeny {
+    float: none;
+  }
+  header .top-header #right-nav {
+    height: auto;
+    float: none;
+    width: 100%;
+    background-color: #b12727;
+    padding-left: 0px;
     display: none;
     opacity: 0;
   }
-  header .top-header #right-nav {
-    display: none;
-    opacity: 0;
+  header .top-header #right-nav ul#menu-rightmeny {
+    float: none;
   }
 
   .banner .welcomebox {

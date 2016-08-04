@@ -57,6 +57,26 @@ console.log('first')
 			$(document).ready(function(){
 
 
+				$('.menu-toggle').click(function(){
+
+					$('#left-nav').css({
+						opacity: 1
+					})
+
+					$('#left-nav').slideToggle();
+
+					$('#right-nav').slideToggle();
+
+					$('#right-nav').css({
+						opacity: 1
+					})
+
+
+
+
+				});
+
+
 				var headerW = $('.branding img').width();
 
 				var boxOutW = $('.boxout').width();
