@@ -581,7 +581,7 @@ header {
 }
 header .top-header {
   height: 5rem;
-  background-color: black;
+  background-color: #b12727;
   text-align: center;
 }
 header .top-header #right-nav {

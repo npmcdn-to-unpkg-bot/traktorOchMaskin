@@ -155,7 +155,20 @@ console.log('first')
 
 					console.log($(document).height());
 
-					console.log(body[0].scrollTop + body.height());
+					console.log(body[0].scrollTop);
+
+
+					if (body[0].scrollTop > 100) {
+
+
+
+							$('.overlay-title').css({
+								opacity:0,
+								visibility:'visible',
+							});
+
+
+					}
 
 					if ($(document).height() - $('.bot-footer').height() < body[0].scrollTop + body.height() ) {
 
