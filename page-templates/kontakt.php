@@ -19,13 +19,43 @@ get_header();
 
 <?php the_title('<h1></h1>');?>
 
+<?php $args = array('post_type' => 'worker'); ?>
+
+
+<?php $the_query = new WP_Query( $args ); 
+
+if ( $the_query->have_posts() ) { ?>
+
 <div class="worker-wrap">
+
+<?php while ( $the_query->have_posts() ) { ?>
+
+
+	<?php $the_query->the_post(); ?>
+
+
+
 	
 	<div class="worker">
+
+	<h3><?php the_title();?></h3>
+
 		<img src="">
 
-		<h3>Nils-Johan Strömgren</h3>
 	</div>
+
+
+	<?php }
+
+
+	wp_reset_postdata();
+
+
+	}else{
+
+		//no posts
+
+		} ?>
 </div>
 
 </div>

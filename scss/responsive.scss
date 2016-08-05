@@ -51,6 +51,16 @@
 
 	}
 
+	#info-section{
+		#instafeed{
+			.insta{
+
+				flex-basis: calc(100%/4);
+
+			}
+		}
+	}
+
 }
 
 
@@ -60,6 +70,8 @@
 	header{
 
 		.top-header{
+
+			height: 4rem;
 
 
 			.menu-toggle{
@@ -141,6 +153,17 @@
 		}
 	}
 
+
+		#info-section{
+		#instafeed{
+			.insta{
+
+				flex-basis: calc(100%/3);
+
+			}
+		}
+	}
+
 }
 
 
@@ -172,7 +195,17 @@
 
 
 
+	#welcome-section{
+		height: 600px;
+		background-position: 10% 20%;
+	}
+
+
+
 	.page-content{
+
+
+
 
 
 		.tjanster{
@@ -188,8 +221,29 @@
 	
 }
 
+@media(max-width:500px){
+
+
+	#intro p{
+		padding:10px 10px;
+	}
+
+
+
+}
+
 
 @media(max-width:400px){
+
+		#info-section{
+		#instafeed{
+			.insta{
+
+				flex-basis: calc(100%/2);
+
+			}
+		}
+	}
 
 	.welcomebox{
 

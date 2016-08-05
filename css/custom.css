@@ -80,8 +80,15 @@ table {
   header .top-header #left-nav ul#menu-leftmeny {
     float: left;
   }
+
+  #info-section #instafeed .insta {
+    flex-basis: calc(100%/4);
+  }
 }
 @media (max-width: 995px) {
+  header .top-header {
+    height: 4rem;
+  }
   header .top-header .menu-toggle {
     display: block;
     color: white;
@@ -135,6 +142,10 @@ table {
   .page-content .tjanster .tjanst-item {
     height: 400px;
   }
+
+  #info-section #instafeed .insta {
+    flex-basis: calc(100%/3);
+  }
 }
 @media (max-width: 600px) {
   header nav ul {
@@ -145,11 +156,25 @@ table {
     width: 100%;
   }
 
+  #welcome-section {
+    height: 600px;
+    background-position: 10% 20%;
+  }
+
   .page-content .tjanster .tjanst-item {
     height: 300px;
   }
 }
+@media (max-width: 500px) {
+  #intro p {
+    padding: 10px 10px;
+  }
+}
 @media (max-width: 400px) {
+  #info-section #instafeed .insta {
+    flex-basis: calc(100%/2);
+  }
+
   .welcomebox h1 {
     font-size: 30px;
   }
