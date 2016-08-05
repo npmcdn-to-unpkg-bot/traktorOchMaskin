@@ -901,8 +901,9 @@ section#facebook {
 }
 
 .overlay-title {
-  transition: 1s ease all;
+  transition: 0.5s ease all;
   display: inline-block;
+  height: 100vh;
   position: absolute;
   left: 0px;
   right: 0px;
@@ -1372,6 +1373,9 @@ footer .bot-footer {
   width: 100%;
   visibility: hidden;
   background-color: black;
+  text-align: center;
+}
+footer .bot-footer .footer-copyright p {
   text-align: center;
 }
 footer i.fa {

@@ -22,7 +22,18 @@ get_header();
 	<?php the_content(); ?>
 </div>
 
-<div class="col-md-5"></div>
+<div class="col-md-5">
+		<div class="row">
+		<img src="<?php bloginfo('template_url')?>/images/fordon1.jpg">
+	</div>
+		<div class="row">
+		<img src="<?php bloginfo('template_url')?>/images/fordon2.jpg">
+	</div>
+			<div class="row">
+		<img src="<?php bloginfo('template_url')?>/images/fordon3.jpg">
+	</div>
+
+</div>
 </div>
 
 </div>

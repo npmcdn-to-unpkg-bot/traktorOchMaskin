@@ -1001,8 +1001,9 @@ transition: 0.5s ease all;
 }
 
 	.overlay-title{
-		transition: 1s ease all;
+		transition: 0.5s ease all;
 	display: inline-block;
+	height:100vh;
     position: absolute;
     left: 0px;
     right: 0px;
@@ -1712,7 +1713,15 @@ footer{
 	visibility: hidden;
 				background-color: black;
 
-		text-align: center
+		text-align: center;
+
+		.footer-copyright{
+
+			p{
+
+				text-align: center;
+			}
+		}
 
 	}
 
