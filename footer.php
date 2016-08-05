@@ -59,6 +59,12 @@ console.log('first')
 
 				$('.overlay-title').mouseover(function(){
 
+
+
+
+
+
+
 					console.log('hover');
 
 					$(this).css({ 
@@ -70,6 +76,12 @@ console.log('first')
 				})
 
 				$('#info-section').mouseleave(function(){
+
+					console.log(body[0].scrollTop);
+
+
+					if (body[0].scrollTop < 100) {
+
 					console.log('leave');
 
 							$('.overlay-title').css({
@@ -77,7 +89,11 @@ console.log('first')
 								visibility:'visible',
 							});
 
+										
+					}
+
 						});
+
 
 
 				$('.menu-toggle').click(function(){
