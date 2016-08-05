@@ -40,7 +40,7 @@ if ( $the_query->have_posts() ) { ?>
 
 	<h3><?php the_title();?></h3>
 
-		<img src="">
+		<img src="<?php the_post_thumbnail_url();?>">
 
 	</div>
 

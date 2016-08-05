@@ -14,8 +14,16 @@ get_header();
 </div>
 
 <div class="container">
+
+<div class="row">
+
+<div col-md-6></div>
 <?php the_title('<h1></h1>'); ?>
 	<?php the_content(); ?>
+
+	</div>
+
+
 </div>
 			
 </section>

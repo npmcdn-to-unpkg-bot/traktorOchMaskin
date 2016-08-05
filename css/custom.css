@@ -219,6 +219,12 @@ body {
   right: 0px;
 }
 
+.highlight {
+  font-size: 20px;
+  font-weight: 900;
+  color: #b12727;
+}
+
 h1 {
   font-family: "paralucent";
   font-size: 35px;
@@ -384,6 +390,34 @@ video {
 .page-wrapper {
   margin-top: 4.75rem;
 }
+.page-wrapper #kontakt .worker-wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+}
+.page-wrapper #kontakt .worker-wrap .worker {
+  align-content: flex-start;
+  webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  flex-basis: calc(100%/4);
+}
 .page-wrapper #kontakt .map-banner {
   margin-top: 5rem;
   width: 100%;
@@ -444,10 +478,19 @@ video {
 }
 
 /*GENERAL END*/
+body p {
+  text-align: left;
+  font-size: 19px;
+  line-height: 1.5rem;
+}
 body .red-box {
   background-color: #b12727;
-  border: 1px solid gray;
   padding: 19px;
+}
+body .red-box p {
+  color: white;
+  padding: 10px 0px;
+  font-size: 18px;
 }
 body .red-box .sub-title {
   padding-bottom: 10px;
@@ -760,9 +803,10 @@ section#facebook {
 }
 
 #info-section {
+  position: relative;
   text-align: center;
   margin-bottom: 50px;
-  margin-top: 48px;
+  margin-top: 5.5rem;
 }
 #info-section #insta-title {
   /* margin-bottom: 30px; */
@@ -812,8 +856,8 @@ section#facebook {
   -ms-flex-preferred-size: calc(100%/6);
   flex-basis: calc(100%/6);
   line-height: 0;
-  -webkit-transition: opacity .2s ease-in-out;
-  transition: opacity .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
   border: .2vw solid transparent;
   cursor: pointer;
   position: relative;
@@ -837,9 +881,17 @@ section#facebook {
   display: block;
   text-align: left;
 }
-#info-section #instafeed .insta:hover .text {
-  opacity: 1;
-  visibility: visible;
+#info-section #instafeed .insta:hover {
+  zoom: 2;
+  /*
+  .text{
+  	opacity: 1;
+  	visibility: visible;
+  }
+  */
+}
+#info-section #instafeed .insta:hover img {
+  zoom: 2;
 }
 #info-section #instafeed .insta img {
   width: 100%;
@@ -848,20 +900,38 @@ section#facebook {
   padding: 0px 1px 0px 1px;
 }
 
-#intro {
-  text-align: center;
-}
-#intro .overlay-title {
+.overlay-title {
+  transition: 1s ease all;
   display: inline-block;
   position: absolute;
   left: 0px;
   right: 0px;
-  top: -100px;
+  top: 50%;
+  margin-top: -60px;
+  z-index: 9;
+  background-color: rgba(56, 56, 56, 0.45);
+  top: 52px;
+  bottom: -10px;
 }
-#intro .overlay-title h1 {
-  display: inline-block;
-  background-color: white;
-  padding: 20px;
+.overlay-title h1 {
+  /*display: inline-block; */
+  left: 0px;
+  right: 0px;
+  top: 50%;
+  bottom: 0px;
+  margin-top: -90px;
+  /* padding: 20px; */
+  position: absolute;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "montserrat";
+  font-size: 90px;
+}
+
+#intro {
+  text-align: center;
+  margin-bottom: 50px;
 }
 #intro h1 {
   text-align: center;
@@ -883,7 +953,8 @@ section#facebook {
 }
 
 #welcome-section {
-  height: 700px;
+  background-size: cover;
+  height: 600px;
   padding: 80px 0px;
   margin-top: 0px;
   background-color: #efefef;
@@ -945,9 +1016,6 @@ section#facebook {
   top: -10px;
   left: -15px;
   /* right: 22px; */
-}
-#facebook #youtube {
-  margin-top: 70px;
 }
 
 .page-wrapper .container .fp-add-small {
@@ -1273,10 +1341,25 @@ footer .top-footer h3 {
   font-size: 18px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
+  border-bottom: 2px solid white;
+  padding-bottom: 5px;
 }
 footer .top-footer p {
   font-family: "open-sans";
   font-size: 15px;
+}
+footer .top-footer .widget-container {
+  list-style: none;
+  line-height: 25px;
+}
+footer .top-footer .widget-container h4 {
+  font-size: 18px;
+}
+footer .top-footer .widget-container a {
+  color: white;
+}
+footer .top-footer .widget-container .textwidget {
+  font-size: 16px;
 }
 footer .bot-footer.visible {
   visibility: visible;

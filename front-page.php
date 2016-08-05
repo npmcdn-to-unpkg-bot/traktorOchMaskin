@@ -4,13 +4,12 @@
 <div class="page-wrapper">
 
 		<section id="info-section">
+					<div class="overlay-title">
+				<h1><?php the_field('valkomstext');?></h1></div>
 
-							<h1 id="insta-title"><a href="https://www.instagram.com/traktorochmaskin/">@traktorochmaskin</a></h1>
-					<div class="row">
+							<!--<h1 id="insta-title"><a href="https://www.instagram.com/traktorochmaskin/">@traktorochmaskin</a></h1>-->
 
 					<div id="instafeed">
-						
-					</div>
 
 					</div>
 
@@ -36,9 +35,26 @@
 			</div>
 		</section>-->
 
-		<section id="welcome-section" style="background-image:url('<?php bloginfo('template_url')?>/images/traktor1.jpg')">
+		<section id="intro">
+				<!--<div class="stripes"></div>-->
+			<div class="container">
 
-						<!--<div class="stripes"></div>-->
+
+				<?php the_content(); ?>
+
+
+								<div class="col-md-12">
+					<!--<img src="<?php bloginfo('template_url')?>/images/crew.jpg">-->
+
+				</div>
+			</div>
+		</section>
+		<!--<section id="youtube">
+			<iframe width="1900" height="1069" src="https://www.youtube.com/embed/WsDP93MyflE?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>-->
+		</section>
+
+		<section id="welcome-section" style="background-image:url('<?php bloginfo('template_url')?>/images/crew-wide.jpg')">
+
 
 								<div class="container">
 
@@ -56,31 +72,13 @@
 
 			</div>
 		</section>
-		<section id="intro">
-				<!--<div class="stripes"></div>-->
-			<div class="container">
-			<div class="overlay-title">
-				<h1>Det här är vi</h1></div>
-
-				<p>Traktor & Maskin i Sörmland AB är ett privatägt företag som verkar inom de gröna näringarna. Vi verkar i Sörmland och är återförsäljare för Massey Ferguson som är ett av de världsledande företagen inom lantbrukssektorn. Vi genomsyras av en äkta vilja att ge god service och se nöjda kunder. Långsiktiga relationer med våra kunder är viktigt för oss. </p>
-
-<p>Traktor & Maskin i Sörmland verkar i hela Sörmland med försäljning och service av traktorer, tröskor och jordbruksrelaterade produkter. Vårt mål är att bli ett framstående maskinbolag i Sörmland och Er partner genom god service, spetskompetens och ny teknik.</p>
-
-
-								<div class="col-md-12">
-					<img src="<?php bloginfo('template_url')?>/images/crew.jpg">
-
-				</div>
-			</div>
-		</section>
-		<!--<section id="youtube">
-			<iframe width="1900" height="1069" src="https://www.youtube.com/embed/WsDP93MyflE?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>-->
-		</section>
 		<section id="facebook">
 		<div class="container">
 		<div class="row">
-			<div class="col-md-6" id="youtube">
+			<div class="col-md-6 red-box" id="youtube">
+			<h3 class="sub-title">Ta en rundtur på youtube!</h3>
 				<iframe width="640" height="360" src="https://www.youtube.com/embed/WsDP93MyflE?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+				<p>Se fina bilder från våra faciliteter i Björkvik, bilderna är från 2014</p>
 			</div>
 
 			<div class="col-md-2">

@@ -95,8 +95,8 @@ function register_widgets(){
 		'id' => 'main-sidebar',
 		'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
 		'after_widget' => '</li>',
-		'before_title' => '<h3 class="widget-title">',
-		'after_title' => '</h3>',
+		'before_title' => '<h4 class="widget-title">',
+		'after_title' => '</h4>',
 	) );
 
 		register_sidebar( array(
@@ -104,16 +104,16 @@ function register_widgets(){
 		'id' => 'footer-left',
 		'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
 		'after_widget' => '</li>',
-		'before_title' => '<h3 class="widget-title">',
-		'after_title' => '</h3>',
+		'before_title' => '<h4 class="widget-title">',
+		'after_title' => '</h4>',
 	) );
 				register_sidebar( array(
 		'name' => __( 'footer_center' ),
 		'id' => 'footer-center',
 		'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
 		'after_widget' => '</li>',
-		'before_title' => '<h3 class="widget-title">',
-		'after_title' => '</h3>',
+		'before_title' => '<h4 class="widget-title">',
+		'after_title' => '</h4>',
 	) );
 
 				register_sidebar( array(
@@ -121,8 +121,8 @@ function register_widgets(){
 		'id' => 'footer-right',
 		'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
 		'after_widget' => '</li>',
-		'before_title' => '<h3 class="widget-title">',
-		'after_title' => '</h3>',
+		'before_title' => '<h4 class="widget-title">',
+		'after_title' => '</h4>',
 	) );
 
 }//end register_widgets()

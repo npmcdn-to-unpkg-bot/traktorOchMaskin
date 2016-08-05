@@ -17,12 +17,17 @@ get_header();
 <div class="container">
 <h1><?php the_title(); ?></h1>
 
+<div class="row">
 <div class="col-md-7">
 	<?php the_content(); ?>
 </div>
+
+<div class="col-md-5"></div>
 </div>
 
 </div>
+</div>
+
 			
 </section>
 

@@ -78,6 +78,12 @@ body{
 
 }
 
+.highlight {
+    font-size: 20px;
+    font-weight: 900;
+    color: #b12727;
+}
+
 
 
 h1{
@@ -278,6 +284,39 @@ content: "";
 
 	#kontakt{
 
+		.worker-wrap{
+	display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+
+
+
+			.worker{
+				align-content: flex-start;
+				webkit-box-flex: 1;
+			    -webkit-flex-grow: 1;
+			    -ms-flex-positive: 1;
+			    flex-grow: 1;
+			    flex-wrap:wrap;
+				flex-basis: calc(100%/4);
+
+			}
+		}
+
 		.map-banner{
 			margin-top: $headerHeight;
 			width: 100%;
@@ -370,12 +409,25 @@ content: "";
 
 body{
 
+	p{
+		    text-align: left;
+    font-size: 19px;
+    line-height: 1.5rem;
+	}
+
 
 	.red-box{
 
 		background-color:#b12727;
-		border:1px solid gray;
+		//border:1px solid gray;
 		padding:19px;
+
+
+		p{
+			color: white;
+			padding:10px 0px;
+			font-size: 18px;
+		}
 
 	   .sub-title{
 	   	padding-bottom:10px;
@@ -817,13 +869,14 @@ section#facebook{
 
 
 #info-section{
+	position:relative;
 
 	text-align:center;
 
 	//height:700px;
 
 	        margin-bottom: 50px;
-    margin-top: 48px;
+    margin-top: $headerHeight + 0.5;
 
 	#insta-title{
     /* margin-bottom: 30px; */
@@ -875,6 +928,8 @@ section#facebook{
 
 		.insta{
 
+
+
 			webkit-box-flex: 1;
     -webkit-flex-grow: 1;
     -ms-flex-positive: 1;
@@ -883,8 +938,10 @@ section#facebook{
     -ms-flex-preferred-size: calc(100%/6);
     flex-basis: calc(100%/6);
     line-height: 0;
-    -webkit-transition: opacity .2s ease-in-out;
-    transition: opacity .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    
+
     border: .2vw solid transparent;
 
 			cursor: pointer;
@@ -915,10 +972,19 @@ transition: 0.5s ease all;
 			}
 
 			&:hover{
+
+
+				zoom: 2;
+
+				img{
+					zoom: 2;
+				}
+				/*
 				.text{
 					opacity: 1;
 					visibility: visible;
 				}
+				*/
 			}
 
 
@@ -934,22 +1000,44 @@ transition: 0.5s ease all;
 	}
 }
 
-#intro{
 	.overlay-title{
+		transition: 1s ease all;
 	display: inline-block;
     position: absolute;
     left: 0px;
     right: 0px;
-    top: -100px;
+    top: 50%;
+    margin-top: -60px;
+    z-index: 9;
+         background-color: rgba(56, 56, 56, 0.45);
+             top: 52px;
+    bottom: -10px;
 
     h1{
-    	display: inline-block;
-    	background-color:white;
-    	padding:20px;
+    
+    
+/*display: inline-block; */
+    left: 0px;
+    right: 0px;
+    top: 50%;
+    bottom: 0px;
+    margin-top: -90px;
+    /* padding: 20px; */
+    position: absolute;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "montserrat";
+    font-size: 90px;
     }
 	}
 
+#intro{
+
+
 	text-align:center;
+	margin-bottom: 50px;
+
 	h1{
 
 		
@@ -977,7 +1065,9 @@ transition: 0.5s ease all;
 
 #welcome-section{
 
-	height:700px;
+	background-size:cover;
+
+	height:600px;
 
 
 	padding: 80px 0px;
@@ -1057,7 +1147,7 @@ transition: 0.5s ease all;
 
 
 	#youtube{
-		margin-top: 70px;
+		//margin-top: 70px;
 	}
 }
 
@@ -1576,12 +1666,31 @@ footer{
 			font-size: 18px;
 			    font-family: 'Montserrat', sans-serif;
 			font-weight: 500;
+			border-bottom:2px solid white;
+			padding-bottom: 5px;
 		}
 
 		p{
 			font-family:$defaultFont;
 
 			font-size: 15px;
+		}
+
+		.widget-container{
+			list-style: none;
+			line-height: 25px;
+
+			h4{
+				font-size:18px;
+			}
+
+			a{
+				color: white;
+			}
+
+			.textwidget{
+				font-size: 16px;
+			}
 		}
 
 	}

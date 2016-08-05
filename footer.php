@@ -7,7 +7,7 @@
 		<?php dynamic_sidebar( 'footer_left' ); ?> 
 			
 		</div>
-		<div id="middle-field" class="col-md-2 col-md-offset-2">
+		<div id="middle-field" class="col-md-4">
 		<h3>Postadress</h3>
 		<?php dynamic_sidebar( 'footer_center' ); ?> 
 			
@@ -55,6 +55,29 @@ console.log('first')
 
 
 			$(document).ready(function(){
+
+
+				$('.overlay-title').mouseover(function(){
+
+					console.log('hover');
+
+					$(this).css({ 
+								opacity:0,
+								visibility:'hidden',
+
+					});
+
+				})
+
+				$('#info-section').mouseleave(function(){
+					console.log('leave');
+
+							$('.overlay-title').css({
+								opacity:1,
+								visibility:'visible',
+							});
+
+						});
 
 
 				$('.menu-toggle').click(function(){
