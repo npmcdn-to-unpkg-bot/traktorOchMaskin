@@ -393,5 +393,3 @@ function your_prefix_meta_boxes( $meta_boxes ) {
 
 
 ?>
-
-
